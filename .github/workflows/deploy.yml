@@ -178,11 +178,7 @@ jobs:
           script_stop: true
           script: |
             set -e
-            whoami
-            echo "=======********========"
             source $HOME/.bashrc
-            alias pnpm="$HOME/.local/state/fnm_multishells/765787_1726076165410/bin/pnpm"
-            alias pm2="$HOME/.local/state/fnm_multishells/765787_1726076165410/bin/pm2"
             basedir=$HOME/shiro
             workdir=$basedir/${{ github.run_number }}
             mkdir -p $workdir
